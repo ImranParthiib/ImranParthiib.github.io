@@ -1,0 +1,24 @@
+@keyframes moveAndRotate {
+  0% {
+    transform: translateY(0) translateX(0) rotate(10deg);
+  }
+  25% {
+    transform: translateY(-25vh) translateX(25vw) rotate(20deg);
+  }
+  50% {
+    transform: translateY(-50vh) translateX(50vw) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100vw) rotate(360deg);
+  }
+  75% {
+    transform: translateY(-75vh) translateX(75vw) rotate(270deg);
+  }
+ 
+}
+
+.rocket {
+  display: inline-block;
+  position: fixed;
+  animation: moveAndRotate 30s linear infinite;
+}
