@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imran Parthib</title>
-    <!-- favicon  -->
+    <!-- favicon -->
     <link rel="shortcut icon" href="/images/cactus.png" type="image/x-icon" />
     <!-- Font Awesome Link -->
     <script
@@ -46,33 +46,63 @@
     </div>
 
     <!-- ?Header Started Here -->
-    <header class="bg-white shadow">
+    <header class="sticky top-0 z-50">
       <nav
-        class="container mx-auto flex justify-between items-center py-4 px-6"
+        class="bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-30 shadow-sm"
       >
-        <a href="#" class="flex items-center">
-          <img src="/images/cactus.png" alt="Logo" class="h-12 w-12 mr-2" />
-          <h1 class="text-xl font-bold">Imran Parthib</h1>
-        </a>
-        <button
-          class="block lg:hidden text-gray-900 focus:outline-none"
-          onclick="document.getElementById('navbarNav').classList.toggle('hidden')"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
         <div
-          id="navbarNav"
-          class="hidden lg:flex lg:items-center w-full lg:w-auto"
+          class="container mx-auto flex justify-between items-center py-4 px-6"
         >
-          <ul class="flex flex-col lg:flex-row items-center lg:space-x-6">
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#skills">Skills</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
+          <a href="#" class="flex items-center">
+            <img src="/images/cactus.png" alt="Logo" class="h-12 w-12 mr-2" />
+            <h1 class="text-xl font-bold">Imran Parthib</h1>
+          </a>
+          <button
+            class="block lg:hidden text-gray-900 focus:outline-none"
+            onclick="document.getElementById('navbarNav').classList.toggle('hidden')"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div
+            id="navbarNav"
+            class="hidden lg:flex lg:items-center w-full lg:w-auto"
+          >
+            <ul class="flex flex-col lg:flex-row items-center lg:space-x-6">
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#projects">Projects</a></li>
+              <li><a class="nav-link" href="#blog-posts">Blog Posts</a></li>
+              <li>
+                <a class="nav-link" href="#latest-youtube-videos">Videos</a>
+              </li>
+              <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
+
+    <!-- Hero/Banner Section -->
+    <section id="hero" class="bg-white py-20">
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+          <p class="text-2xl text-gray-700 mb-6">
+            Full-Stack Developer & Software Engineer
+          </p>
+          <a
+            href="#contact"
+            class="bg-indigo-600 text-white py-3 px-6 rounded-md text-lg hover:bg-indigo-700"
+            >Contact Me</a
+          >
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+          <img
+            src="/images/imran-parthib.png"
+            alt="Imran Parthib"
+            class="rounded-full w-64 h-64 object-cover shadow-md"
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- ?Main Section Started Here -->
     <main class="container mx-auto py-10 px-6">
@@ -80,18 +110,10 @@
       <section id="about" class="mb-10">
         <h2 class="text-3xl font-bold mb-4">About Me</h2>
         <p class="mb-4">
-          🚀 Hello! I'm Imran Parthib, a passionate developer 🌐 with a love for
+          Hello! I'm Imran Parthib, a passionate developer with a love for
           creating innovative solutions. With a background in software
           engineering, I specialize in full-stack development and have
-          experience working with various technologies. 💡 I love transforming
-          ideas into reality through code. My journey in the world of
-          programming is an ever-evolving exploration, and I thrive on
-          challenges that push me to learn and grow. 🌱 Currently learning and
-          exploring new technologies to stay ahead in the dynamic field of web
-          development. Excited about the potential of AI, blockchain, and their
-          intersection with web technologies. 📫 Connect with me! Let's discuss
-          ideas, collaborate on projects, or just chat about the latest tech
-          trends. Open to exciting opportunities and collaborations.
+          experience working with various technologies.
         </p>
         <div class="flex space-x-4">
           <a
@@ -118,45 +140,6 @@
           >
             <i class="fab fa-twitter text-2xl"></i>
           </a>
-        </div>
-      </section>
-
-      <!-- Skills Section -->
-      <section id="skills" class="mb-10">
-        <h2 class="text-3xl font-bold mb-4">Skills</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
-            <i class="fab fa-html5 text-4xl mb-2"></i>
-            <h5 class="text-xl font-bold">HTML5</h5>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
-            <i class="fab fa-css3-alt text-4xl mb-2"></i>
-            <h5 class="text-xl font-bold">CSS3</h5>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
-            <i class="fab fa-js-square text-4xl mb-2"></i>
-            <h5 class="text-xl font-bold">JavaScript</h5>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
-            <i class="fab fa-react text-4xl mb-2"></i>
-            <h5 class="text-xl font-bold">React</h5>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
-            <i class="fab fa-node-js text-4xl mb-2"></i>
-            <h5 class="text-xl font-bold">Node.js</h5>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
-            <i class="fas fa-database text-4xl mb-2"></i>
-            <h5 class="text-xl font-bold">MongoDB</h5>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
-            <i class="fab fa-python text-4xl mb-2"></i>
-            <h5 class="text-xl font-bold">Python</h5>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
-            <i class="fab fa-aws text-4xl mb-2"></i>
-            <h5 class="text-xl font-bold">AWS</h5>
-          </div>
         </div>
       </section>
 
@@ -211,26 +194,81 @@
         </div>
       </section>
 
+      <!-- Skills Section -->
+      <section id="skills" class="mb-10">
+        <h2 class="text-3xl font-bold mb-4">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+            <i class="fas fa-code text-4xl mb-2 text-indigo-600"></i>
+            <h5 class="text-xl font-bold">Web Development</h5>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+            <i class="fas fa-database text-4xl mb-2 text-indigo-600"></i>
+            <h5 class="text-xl font-bold">Database Management</h5>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+            <i class="fas fa-mobile-alt text-4xl mb-2 text-indigo-600"></i>
+            <h5 class="text-xl font-bold">Mobile Development</h5>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+            <i class="fas fa-cloud text-4xl mb-2 text-indigo-600"></i>
+            <h5 class="text-xl font-bold">Cloud Computing</h5>
+          </div>
+        </div>
+      </section>
+
       <!-- Blog Posts Section -->
       <section id="blog-posts" class="mb-10">
         <h2 class="text-3xl font-bold mb-4">Blog Posts</h2>
         <ul class="list-disc list-inside space-y-2">
-          <li>Ramadan Mubarak………!</li>
           <li>
-            Embracing 2024: A Guide to Personal, Community, and Technological
-            Contributions Introduction
+            <a
+              href="https://yourblogsite.com/ramadan-mubarak"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >Ramadan Mubarak………! (Link)</a
+            >
           </li>
           <li>
-            Embracing 2024: A Guide to Personal, Community, and Technological
-            Contributions Introduction
+            <a
+              href="https://yourblogsite.com/embracing-2024"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >Embracing 2024: A Guide to Personal, Community, and Technological
+              Contributions Introduction (Link)</a
+            >
           </li>
           <li>
-            Embracing 2024: A Guide to Personal, Community, and Technological
-            Contributions Introduction
+            <a
+              href="https://yourblogsite.com/embracing-2024"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >Embracing 2024: A Guide to Personal, Community, and Technological
+              Contributions Introduction (Link)</a
+            >
           </li>
           <li>
-            Navigating the Evolving World of Software Development: Key Insights
-            and Trends for Success
+            <a
+              href="https://yourblogsite.com/embracing-2024"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >Embracing 2024: A Guide to Personal, Community, and Technological
+              Contributions Introduction (Link)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://yourblogsite.com/software-development-insights"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >Navigating the Evolving World of Software Development: Key
+              Insights and Trends for Success (Link)</a
+            >
           </li>
         </ul>
       </section>
@@ -239,21 +277,53 @@
       <section id="latest-youtube-videos" class="mb-10">
         <h2 class="text-3xl font-bold mb-4">Latest Youtube Videos</h2>
         <ul class="list-disc list-inside space-y-2">
-          <li>ফিরিয়ে দাও - Song by Miles (AI Version) #ai #capcut #song</li>
           <li>
-            Unlock Success: Consistency is the Key #consistency #programming
-            #learning
+            <a
+              href="https://www.youtube.com/watch?v=yourvideo1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >ফিরিয়ে দাও - Song by Miles (AI Version) #ai #capcut #song
+              (Link)</a
+            >
           </li>
           <li>
-            Changing the theme in VS Code: An easy and effective way. #vscode
-            #theme #vscodeextensions #tips
+            <a
+              href="https://www.youtube.com/watch?v=yourvideo2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >Unlock Success: Consistency is the Key #consistency #programming
+              #learning (Link)</a
+            >
           </li>
           <li>
-            মৃত্যুর নিয়মকানুন-সালমান হাবিব। আরো কিছু কথাবাার্তা................
+            <a
+              href="https://www.youtube.com/watch?v=yourvideo3"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >Changing the theme in VS Code: An easy and effective way. #vscode
+              #theme #vscodeextensions #tips (Link)</a
+            >
           </li>
           <li>
-            <a href="https://www.youtube.com/watch?v=wzfxeepCO00"
-              >Codechef DSA learning #dsa #codechef #programming</a
+            <a
+              href="https://www.youtube.com/watch?v=yourvideo4"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >মৃত্যুর নিয়মকানুন-সালমান হাবিব। আরো কিছু
+              কথাবাার্তা................ (Link)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=wzfxeepCO00"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-indigo-600 hover:underline"
+              >Codechef DSA learning #dsa #codechef #programming (Link)</a
             >
           </li>
         </ul>
