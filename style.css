@@ -8,9 +8,6 @@
   50% {
     transform: translateY(-50vh) translateX(50vw) rotate(180deg);
   }
-  100% {
-    transform: translateY(-100vh) translateX(100vw) rotate(360deg);
-  }
   75% {
     transform: translateY(-75vh) translateX(75vw) rotate(270deg);
   }
@@ -19,6 +16,7 @@
 
 .rocket {
   display: inline-block;
+  top: 20;
   position: fixed;
-  animation: moveAndRotate 30s linear infinite;
+  animation: moveAndRotate 10s linear infinite;
 }
