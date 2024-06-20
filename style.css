@@ -6,12 +6,14 @@
     transform: translateY(-25vh) translateX(25vw) rotate(20deg);
   }
   50% {
-    transform: translateY(-50vh) translateX(50vw) rotate(180deg);
+    transform: translateY(0) translateX(0) rotate(180deg);
   }
   75% {
-    transform: translateY(-75vh) translateX(75vw) rotate(270deg);
+    transform: translateY(25vh) translateX(-25vw) rotate(270deg);
   }
- 
+  100% {
+    transform: translateY(0) translateX(0) rotate(360deg);
+  }
 }
 
 .rocket {
