@@ -72,7 +72,7 @@
             class="hidden lg:flex lg:items-center w-full lg:w-auto"
           >
             <ul class="flex flex-col lg:flex-row items-center lg:space-x-6">
-              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#me">About</a></li>
               <li><a class="nav-link" href="#projects">Projects</a></li>
               <li><a class="nav-link" href="#blog-posts">Blog Posts</a></li>
               <li>
@@ -86,7 +86,7 @@
     </header>
 
     <!-- ?Hero/Banner Section -->
-    <section id="hero" class="bg-blue-50 py-20 px-10 md:px-40">
+    <section id="hero" class="bg-blue-50 py-20 px-10 md:px-48">
       <div class="container mx-auto flex flex-col md:flex-row items-center">
         <div
           class="md:w-1/2 text-center md:text-left mb-10 md:mb-0 text-gray-600"
@@ -104,6 +104,10 @@
           >
           <h3 class="rocket text-2xl md:text-3xl mb-4">🚀</h3>
           <div class="flex space-x-4 pt-7">
+            <a class="icon" href="/Resume/resume.pdf" download>
+              <i class="fas fa-download text-3xl text-red-500"></i>
+            </a>
+
             <a
               class="icon"
               target="_blank"
@@ -144,7 +148,7 @@
     </section>
 
     <!-- ?Main Section Started Here -->
-    <main class="container mx-auto py-10 px-4 md:px-24">
+    <main class="container mx-auto py-10 px-4 md:px-24" id="me">
       <!-- ?About Section -->
       <section id="about" class="mb-10">
         <h2 class="text-3xl font-bold pl-4">About Me</h2>
@@ -414,7 +418,7 @@
           Courses
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white rounded-lg shadow-md p-4">
+          <div class="bg-white rounded-lg shadow-md p-4 glowing-corners">
             <i class="fa-solid fa-book"></i>
             <h4 class="font-bold">Python Programming</h4>
             <p>Udemy</p>
@@ -572,47 +576,52 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact">
-        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-        <form id="contactForm" class="space-y-4">
-          <div>
-            <label for="name" class="block text-sm font-medium">Name</label>
-            <input
-              type="text"
-              id="name"
-              class="w-full mt-1 p-2 border border-gray-300 rounded-md"
-              required
-            />
-          </div>
-          <div>
-            <label for="email" class="block text-sm font-medium"
-              >Email address</label
+      <section id="contact" class="md:flex gap-12">
+        <div class="w-1/2">
+          <img class="rounded-lg" src="/images/contact.png" alt="" />
+        </div>
+        <div class="w-1/2">
+          <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+          <form id="contactForm" class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="w-full mt-1 p-2 border border-gray-300 rounded-md"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium"
+                >Email address</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full mt-1 p-2 border border-gray-300 rounded-md"
+                required
+              />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                class="w-full mt-1 p-2 border border-gray-300 rounded-md"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full py-2 px-4 bg-indigo-600 text-white font-bold rounded-md hover:bg-indigo-700"
             >
-            <input
-              type="email"
-              id="email"
-              class="w-full mt-1 p-2 border border-gray-300 rounded-md"
-              required
-            />
-          </div>
-          <div>
-            <label for="message" class="block text-sm font-medium"
-              >Message</label
-            >
-            <textarea
-              id="message"
-              class="w-full mt-1 p-2 border border-gray-300 rounded-md"
-              rows="3"
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="w-full py-2 px-4 bg-indigo-600 text-white font-bold rounded-md hover:bg-indigo-700"
-          >
-            Submit
-          </button>
-        </form>
+              Submit
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 

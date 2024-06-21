@@ -1,4 +1,4 @@
-const welcomeText = "Welcome Coders!";
+const welcomeText = "Hello,😎 Coders!";
 const descriptionText = "I'm a Full-Stack Developer & Software Engineer";
 const delayW = 500; // Milliseconds between each character
 const delayD = 100; // Milliseconds between each character
