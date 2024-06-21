@@ -1,3 +1,18 @@
+main {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc8FlM26MROkiiCCjlIK7pM8uKT8SdTOn4Q&s");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-custom ,header,footer{
+  background-image: url("https://img.freepik.com/free-vector/halftone-background-with-dots_23-2148907692.jpg");
+}
+.development-notice {
+  background-color: #ffcc00;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
 @keyframes moveAndRotate {
   0% {
     transform: translateY(0) translateX(0) rotate(10deg);
@@ -24,13 +39,16 @@
 }
 
 /* Glowing Effects */
-.glowing-corners:hover {
+.glowing-corners {
   border-radius: 15px;
   box-shadow: 0 0 8px 2px #00fe2f;
   box-shadow: 0 0 10px 2px rgba(114, 170, 165, 0.7),
     0 0 15px 2px rgba(0, 254, 169, 0.5), 0 0 20px 4px rgba(0, 254, 220, 0.3);
   background-color: #b0ef83;
 }
-#contact div img{
+.bg-custom {
+  background-size: cover;
+}
+#contact div img {
   width: 83%;
 }

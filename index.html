@@ -30,19 +30,10 @@
         },
       };
     </script>
-    <style>
-      .development-notice {
-        background-color: #ffcc00;
-        color: #000;
-        text-align: center;
-        padding: 10px 0;
-        font-weight: bold;
-      }
-    </style>
   </head>
 
   <!-- ?Body Started Here -->
-  <body class="bg-gray-100 text-gray-900">
+  <body class="text-gray-50">
     <!-- Development Notice -->
     <div class="development-notice">
       This site is currently under development.
@@ -86,7 +77,7 @@
     </header>
 
     <!-- ?Hero/Banner Section -->
-    <section id="hero" class="bg-blue-50 py-20 px-10 md:px-48">
+    <section id="hero" class="py-20 px-10 md:px-48 bg-custom">
       <div class="container mx-auto flex flex-col md:flex-row items-center">
         <div
           class="md:w-1/2 text-center md:text-left mb-10 md:mb-0 text-gray-600"
@@ -280,7 +271,7 @@
       <section id="projects" class="mb-10">
         <h2 class="text-3xl font-bold mb-4">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white rounded-lg shadow-md p-4">
+          <div class="rounded-lg shadow-md p-4">
             <img
               src="/images/project.jfif"
               class="w-full h-48 object-cover rounded-md mb-4"
@@ -295,7 +286,7 @@
               >View Project</a
             >
           </div>
-          <div class="bg-white rounded-lg shadow-md p-4">
+          <div class="rounded-lg shadow-md p-4">
             <img
               src="/images/project.jfif"
               class="w-full h-48 object-cover rounded-md mb-4"
@@ -309,7 +300,7 @@
               >View Project</a
             >
           </div>
-          <div class="bg-white rounded-lg shadow-md p-4">
+          <div class="rounded-lg shadow-md p-4">
             <img
               src="/images/project.jfif"
               class="w-full h-48 object-cover rounded-md mb-4"
@@ -331,37 +322,37 @@
       <section id="skills" class="mb-10">
         <h2 class="text-3xl font-bold mb-4">Skills</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <div class="rounded-lg shadow-md p-4 text-center">
             <i class="fas fa-code text-4xl mb-2 text-indigo-600"></i>
             <h5 class="text-xl font-bold">Frontend Development</h5>
             <p>HTML, CSS, Bootstrap, Tailwind, JavaScript, React</p>
           </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <div class="rounded-lg shadow-md p-4 text-center">
             <i class="fas fa-database text-4xl mb-2 text-indigo-600"></i>
             <h5 class="text-xl font-bold">Backend Development</h5>
             <p>PHP, SQL</p>
           </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <div class="rounded-lg shadow-md p-4 text-center">
             <i class="fas fa-laptop-code text-4xl mb-2 text-indigo-600"></i>
             <h5 class="text-xl font-bold">Problem Solving</h5>
             <p>C++, Java, JavaScript, Python</p>
           </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <div class="rounded-lg shadow-md p-4 text-center">
             <i class="fas fa-paint-brush text-4xl mb-2 text-indigo-600"></i>
             <h5 class="text-xl font-bold">Design</h5>
             <p>Figma, Canva</p>
           </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <div class="rounded-lg shadow-md p-4 text-center">
             <i class="fas fa-tools text-4xl mb-2 text-indigo-600"></i>
             <h5 class="text-xl font-bold">Other tools</h5>
             <p>Git, Github, Vscode, Terminal</p>
           </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <div class="rounded-lg shadow-md p-4 text-center">
             <i class="fas fa-pencil text-4xl mb-2 text-indigo-600"></i>
             <h5 class="text-xl font-bold">Writing</h5>
             <p>Dev.to, Medium, Hashnode</p>
           </div>
-          <div class="bg-white rounded-lg shadow-md p-4 text-center">
+          <div class="rounded-lg shadow-md p-4 text-center">
             <i class="fa-brands fa-youtube text-4xl mb-2 text-indigo-600"></i>
             <h5 class="text-xl font-bold">Content</h5>
             <p>Script,Voiceover,Editing</p>
@@ -576,11 +567,11 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="md:flex gap-12">
-        <div class="w-1/2">
+      <section id="contact" class="flex md:gap-12">
+        <div class="md:w-1/2 w-2/3 md:pt-0 pt-32">
           <img class="rounded-lg" src="/images/contact.png" alt="" />
         </div>
-        <div class="w-1/2">
+        <div class="md:w-1/2">
           <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
           <form id="contactForm" class="space-y-4">
             <div>
