@@ -18,17 +18,13 @@
 
     <!-- !CSS LINK -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- !EmailJs -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              productbg: "#50d71e",
-            },
-          },
-        },
-      };
+      (function () {
+        emailjs.init("6J7tZHp-TqtLP13sI");
+      })();
     </script>
   </head>
 
@@ -512,7 +508,9 @@
 
       <!-- ?Latest Youtube Videos Section -->
       <section id="latest-youtube-videos" class="mb-10">
-        <h2 class="text-3xl font-bold mb-4 text-gray-50">Latest Youtube Videos</h2>
+        <h2 class="text-3xl font-bold mb-4 text-gray-50">
+          Latest Youtube Videos
+        </h2>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div class="bg-white rounded-lg shadow-md p-4">
             <iframe
@@ -573,47 +571,46 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="flex md:gap-12">
-        <div class="md:w-1/2 w-2/3 md:pt-0 pt-32">
-          <img class="rounded-lg" src="/images/contact.png" alt="" />
+      <section
+        id="contact"
+        class="flex flex-col md:flex-row items-center md:gap-12"
+      >
+        <div class="md:w-1/2 w-full md:pt-0 pt-16">
+          <img
+            class="rounded-lg w-full h-auto"
+            src="/images/contact.png"
+            alt="Contact"
+          />
         </div>
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 w-full p-4">
           <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-          <form id="contactForm" class="space-y-4">
-            <div>
-              <label for="name" class="block text-sm font-medium">Name</label>
-              <input
-                type="text"
-                id="name"
-                class="w-full mt-1 p-2 border border-gray-300 rounded-md"
-                required
-              />
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-medium"
-                >Email address</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="w-full mt-1 p-2 border border-gray-300 rounded-md"
-                required
-              />
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-medium"
-                >Message</label
-              >
-              <textarea
-                id="message"
-                class="w-full mt-1 p-2 border border-gray-300 rounded-md"
-                rows="3"
-                required
-              ></textarea>
-            </div>
+          <form id="contact-form" class="flex flex-col">
+            <input
+              class="rounded-md p-2 mb-4 w-full"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              class="rounded-md p-2 mb-4 w-full"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              class="rounded-md p-2 mb-4 w-full"
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
             <button
+              class="bg-indigo-600 text-white py-3 px-6 rounded-md text-lg hover:bg-indigo-700"
               type="submit"
-              class="w-full py-2 px-4 bg-indigo-600 text-white font-bold rounded-md hover:bg-indigo-700"
             >
               Submit
             </button>
@@ -631,5 +628,6 @@
 
     <!-- Script Link-->
     <script src="script.js"></script>
+    <script src="email.js"></script>
   </body>
 </html>

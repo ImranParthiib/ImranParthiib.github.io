@@ -49,9 +49,4 @@ function typeDescriptionText(text) {
 typeWelcomeText(welcomeText);
 typeDescriptionText(descriptionText);
 
-// form control
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Form submitted successfully!");
-});
 
