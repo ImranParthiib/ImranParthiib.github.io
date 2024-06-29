@@ -48,3 +48,5 @@ function typeDescriptionText(text) {
 // Call the functions to type out the welcome and description text
 typeWelcomeText(welcomeText);
 typeDescriptionText(descriptionText);
+
+

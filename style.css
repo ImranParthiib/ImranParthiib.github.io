@@ -1,10 +1,10 @@
-.bg-unique {
+.bg-unique,
+header {
   background-image: url("https://github.blog/wp-content/uploads/2020/12/2-2.png?resize=1024%2C613");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .bg-custom,
-header,
 footer {
   background-image: url("https://github.blog/wp-content/uploads/2020/12/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.png?fit=1200%2C630");
   background-size: cover;
@@ -34,6 +34,11 @@ footer {
   100% {
     transform: translateY(10) translateX(10) rotate(300deg);
   }
+}
+/* Custom styles to remove underlines and borders on mobile menu */
+#mobile-menu-2 a {
+}
+#mobile-menu-2 a:hover {
 }
 
 .rocket {
