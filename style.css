@@ -1,10 +1,11 @@
-.bg-unique{
+.bg-unique {
   background-image: url("https://github.blog/wp-content/uploads/2020/12/2-2.png?resize=1024%2C613");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .bg-custom,
-header,footer {
+header,
+footer {
   background-image: url("https://github.blog/wp-content/uploads/2020/12/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.png?fit=1200%2C630");
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,6 +42,13 @@ header,footer {
   position: fixed;
   animation: moveAndRotate 15s linear infinite;
 }
+.tech {
+  border-color: #af13cb;
+}
+.blur {
+  backdrop-filter: blur(10px);
+  background: rgba(86, 206, 239, 0.756);
+}
 
 /* Glowing Effects */
 .glowing-corners {
@@ -48,7 +56,7 @@ header,footer {
   box-shadow: 0 0 8px 2px #00fe2f;
   box-shadow: 0 0 10px 2px rgba(114, 170, 165, 0.7),
     0 0 15px 2px rgba(0, 254, 169, 0.5), 0 0 20px 4px rgba(0, 254, 220, 0.3);
-  background-color: #b0ef83;
+  background-color: #b9dddbc7;
 }
 .bg-custom {
   background-size: cover;

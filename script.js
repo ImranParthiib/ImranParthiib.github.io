@@ -1,5 +1,5 @@
-const welcomeText = "Hello,😎 Coders!";
-const descriptionText = "I'm a Full-Stack Developer & Software Engineer";
+const welcomeText = "Hello,😎 World!";
+const descriptionText = "I'm a Frontend Developer & Programming Enthusiast";
 const delayW = 500; // Milliseconds between each character
 const delayD = 100; // Milliseconds between each character
 
@@ -48,5 +48,3 @@ function typeDescriptionText(text) {
 // Call the functions to type out the welcome and description text
 typeWelcomeText(welcomeText);
 typeDescriptionText(descriptionText);
-
-
