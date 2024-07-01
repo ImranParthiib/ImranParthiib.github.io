@@ -139,62 +139,64 @@ footer {
     #08f,
     transparent 99%,
     transparent
-    );
-    animation: bg-spin 3s linear infinite;
-    background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+  );
+  animation: bg-spin 3s linear infinite;
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
     var(--main-bg) border-box;
-    background-position: 50%;
-  }
+  background-position: 50%;
+}
 
-  @keyframes bg-spin {
-    to {
+@keyframes bg-spin {
+  to {
     --border-angle: 1turn;
-    }
   }
+}
 
-  .resume-button:hover {
-    animation-play-state: paused;
-  }
+.resume-button:hover {
+  animation-play-state: paused;
+}
 
-  @property --border-angle {
-    syntax: "<angle>";
-    inherits: true;
-    initial-value: 0turn;
-  }
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 
-  /* For Courses */
-  .gradient-border-button {
-    position: relative;
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #111433;
-    overflow: hidden;
-    border: 2px solid transparent;
-    animation: border-animation 3s linear infinite;
-  }
+/* For Courses */
+.gradient-border-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #111433;
+  overflow: hidden;
+  border: 2px solid transparent;
+  animation: border-animation 3s linear infinite;
+}
 
-  @keyframes border-animation {
-    0% {
+@keyframes border-animation {
+  0% {
     border-color: transparent;
-    transform: scale3d(1, 1, 1) ;
-    }
-    50% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
     border-color: #08f;
-    transform: scale3d(1.05, 1.05, 1.05)  ;
-    }
-    100% {
-    border-color: transparent;
-    transform: scale3d(1, 1, 1) ;
-    }
+    transform: scale3d(1.05, 1.05, 1.05);
   }
-  
+  100% {
+    border-color: transparent;
+    transform: scale3d(1, 1, 1);
+  }
+}
 
- 
-
- 
- 
-
- 
+/* ?Preloader style */
+#preloader {
+  background: rgb(28 39 58) url(icons/preloader.gif) no-repeat center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
