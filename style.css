@@ -18,7 +18,10 @@ footer {
   padding: 10px 0;
   font-weight: bold;
 }
-@keyframes moveAndRotate {
+ 
+/* Custom styles for centering content */
+
+/* @keyframes moveAndRotate {
   0% {
     transform: translateY(0) translateX(0) rotate(10deg);
   }
@@ -41,7 +44,7 @@ footer {
   top: 20;
   position: fixed;
   animation: moveAndRotate 15s linear infinite;
-}
+} */
 .tech {
   border-color: #af13cb;
 }
@@ -123,7 +126,6 @@ footer {
   color: #fff;
   display: grid;
   text-shadow: 0 1px 0 #000;
-  width: 100%;
   --border-angle: 0turn;
   --main-bg: conic-gradient(
     from var(--border-angle),
