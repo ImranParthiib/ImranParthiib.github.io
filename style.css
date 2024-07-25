@@ -1,12 +1,14 @@
 .bg-unique,
 header {
-  background-image: url("https://github.blog/wp-content/uploads/2020/12/2-2.png?resize=1024%2C613");
+  background-image: url(/images/header.webp);
+  /* background-image: url("https://github.blog/wp-content/uploads/2020/12/2-2.png?resize=1024%2C613"); */
   background-size: cover;
   background-repeat: no-repeat;
 }
 .bg-custom,
 footer {
-  background-image: url("https://github.blog/wp-content/uploads/2020/12/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.png?fit=1200%2C630");
+  background-image: url(/images/footer.webp);
+  /* background-image: url("https://github.blog/wp-content/uploads/2020/12/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.png?fit=1200%2C630"); */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -18,7 +20,7 @@ footer {
   padding: 10px 0;
   font-weight: bold;
 }
- 
+
 /* Custom styles for centering content */
 
 /* @keyframes moveAndRotate {
