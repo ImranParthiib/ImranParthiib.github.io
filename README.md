@@ -24,4 +24,4 @@ Here are some of my notable projects:
 
 ## Contact Me
 
-Feel free to reach out to me via email at [email protected] or connect with me on LinkedIn.
+Feel free to reach out to me [Contact](https://imranparthib.me/#contact) or connect with me on LinkedIn.
