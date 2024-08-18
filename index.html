@@ -32,6 +32,12 @@
     <!-- !CSS LINK -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
     <!-- !EmailJs -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
@@ -585,47 +591,78 @@
           <i class="fa-solid fa-school fa-beat" style="color: #2f00fe"></i>
           Education
         </h2>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div
-            class="blur bg-green-500 rounded-lg shadow-md p-5 pl-11 circle-motion"
+            class="relative overflow-hidden rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
           >
-            <i class="fa-solid fa-building-columns"></i>
-            <h4 class="font-bold">Bachelor of Science in Computer Science</h4>
-            <p>Daffodil International University</p>
-            <p>CGPA: 3.33/4.00</p>
+            <img
+              src="./images/education/diu.jpg"
+              alt="Daffodil International University"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 p-5 flex flex-col justify-end"
+            >
+              <i class="fa-solid fa-building-columns text-white mb-2"></i>
+              <h4 class="font-bold text-white">
+                Bachelor of Science in Computer Science
+              </h4>
+              <p class="text-white">Daffodil International University</p>
+              <p class="text-white">CGPA: 3.33/4.00</p>
+            </div>
           </div>
           <div
-            class="blur bg-green-500 rounded-lg shadow-md p-5 pl-11 circle-motion"
+            class="relative overflow-hidden rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
           >
-            <i
-              class="fa-solid fa-graduation-cap fa-bounce"
-              style="color: #098ff6"
-            ></i>
-            <h4 class="font-bold">Higher Secondary School in Science</h4>
-            <p>Baf Shaheen College, Jessore</p>
-            <p>GPA: 3.83/5.00</p>
+            <img
+              src="./images/education/bafshaheen.jpg"
+              alt="Baf Shaheen College, Jessore"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 p-5 flex flex-col justify-end"
+            >
+              <i class="fa-solid fa-building-columns text-white mb-2"></i>
+              <h4 class="font-bold text-white">
+                Higher Secondary School in Science
+              </h4>
+              <p class="text-white">Baf Shaheen College, Jessore</p>
+              <p class="text-white">GPA: 3.83/5.00</p>
+            </div>
           </div>
           <div
-            class="blur bg-green-500 rounded-lg shadow-md p-5 pl-11 circle-motion"
+            class="relative overflow-hidden rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
           >
-            <i
-              class="fa-solid fa-graduation-cap fa-bounce"
-              style="color: #098ff6"
-            ></i>
-            <h4 class="font-bold">Secondary School in Science</h4>
-            <p>Harinarayanpur ML High School</p>
-            <p>GPA: 5.00/5.00</p>
+            <img
+              src="./images/education/school.jpg"
+              alt="Harinarayanpur ML High School"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 p-5 flex flex-col justify-end"
+            >
+              <i class="fa-solid fa-building-columns text-white mb-2"></i>
+              <h4 class="font-bold text-white">Secondary School in Science</h4>
+              <p class="text-white">Harinarayanpur ML High School</p>
+              <p class="text-white">GPA: 5.00/5.00</p>
+            </div>
           </div>
           <div
-            class="blur bg-green-500 rounded-lg shadow-md p-5 pl-11 circle-motion"
+            class="relative overflow-hidden rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105"
           >
-            <i
-              class="fa-solid fa-graduation-cap fa-bounce"
-              style="color: #098ff6"
-            ></i>
-            <h4 class="font-bold">Junior School</h4>
-            <p>Harinarayanpur ML High School</p>
-            <p>CGPA: 4.63/5.00</p>
+            <img
+              src="./images/education/school.jpg"
+              alt="Harinarayanpur ML High School"
+              class="w-full h-48 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 p-5 flex flex-col justify-end"
+            >
+              <i class="fa-solid fa-building-columns text-white mb-2"></i>
+              <h4 class="font-bold text-white">Junior School</h4>
+              <p class="text-white">Harinarayanpur ML High School</p>
+              <p class="text-white">CGPA: 4.63/5.00</p>
+            </div>
           </div>
         </div>
       </section>
@@ -643,7 +680,7 @@
               Complete Web Development Course With Jhankar Mahbub
             </h4>
             <p>Programming Hero</p>
-            <p>Duration: 6 month, 200 hours+ </p>
+            <p>Duration: 6 month, 200 hours+</p>
           </div>
           <div class="gradient-border-button rounded-lg shadow-md p-4">
             <i class="fa-solid fa-book"></i>
@@ -880,6 +917,27 @@
       </div>
     </footer>
 
+    <!-- Lazy loading images -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const lazyImages = document.querySelectorAll(".lazy-load");
+        lazyImages.forEach((img) => {
+          img.onload = () => (img.style.opacity = 1);
+          img.src = img.getAttribute("data-src");
+        });
+      });
+    </script>
+
+    <!-- AOS initialization -->
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Script Link-->
     <script src="script.js"></script>
     <script src="header.js"></script>
