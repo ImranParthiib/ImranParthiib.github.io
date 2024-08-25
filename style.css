@@ -148,6 +148,32 @@ footer {
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,
     var(--main-bg) border-box;
   background-position: 50%;
+  transition: transform 0.3s ease, text-shadow 0.3s ease, background 0.3s ease;
+}
+
+.circle-motion:hover {
+  animation-play-state: paused;
+  text-shadow: 0 1px 5px #08f;
+  border: 2px solid transparent;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 25%,
+    #1b0a31,
+    transparent 99%,
+    transparent
+  );
+ --main-bg: conic-gradient(
+    from var(--border-angle),
+    #0d3b3ba1,
+    #042a3575 5%,
+    #0a23459c 60%,
+    #100a4a93 95%
+  );
+
+
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+  transform: scale(1.05);
 }
 
 @keyframes bg-spin {
@@ -207,13 +233,17 @@ footer {
 
 /* _________________________ */
 .blog-post-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   transform: rotate(45deg);
   transition: opacity 0.5s ease;
   opacity: 0;
@@ -224,7 +254,7 @@ footer {
 }
 
 .blog-post-title::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -237,4 +267,3 @@ footer {
 .blog-post-card:hover .blog-post-title::after {
   width: 100%;
 }
-

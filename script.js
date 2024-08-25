@@ -1,5 +1,5 @@
-const welcomeText = "Hello,😎 World!";
-const delay = 500; // Milliseconds between each character
+const welcomeText = "Hello, World!";
+const delay = 100; // Reduced delay for faster typing
 
 // Function to type out text one character at a time for welcome text
 function typeWelcomeText(text) {
@@ -8,15 +8,15 @@ function typeWelcomeText(text) {
 
   function addChar() {
     if (index < text.length) {
-      element.textContent += text.charAt(index);
+      element.innerHTML += text.charAt(index);
       index++;
       setTimeout(addChar, delay);
     } else {
       setTimeout(() => {
-        element.textContent = "";
+        element.innerHTML = "";
         index = 0;
         addChar();
-      }, delay); // Pause before restarting
+      }, 2000); // Longer pause before restarting
     }
   }
 
@@ -26,15 +26,14 @@ function typeWelcomeText(text) {
 // Call the functions to type out the welcome and description text
 typeWelcomeText(welcomeText);
 
-//
 const texts = [
-  "I'm a Frontend Developer & Programming Enthusiast 🚀",
-  "Pursuing Computer Science & Engineering",
-  "I'm a Tech Writer & Content Creator 👨‍💻 ",
+  "I'm a Frontend Developer & Programming Enthusiast 🚀 ",
+  "Pursuing Computer Science & Engineering  ",
+  "I'm a Tech Writer & Content Creator 👨‍💻  ",
 ];
-const typingSpeed = 150;
-const deletingSpeed = 100;
-const delayAfterTyping = 800;
+const typingSpeed = 50; // Faster typing
+const deletingSpeed = 30; // Faster deleting
+const delayAfterTyping = 1500; // Longer pause after typing
 
 let currentTextIndex = 0;
 let charIndex = 0;
@@ -45,7 +44,7 @@ function type() {
   const displayedText = isDeleting
     ? currentText.slice(0, charIndex--)
     : currentText.slice(0, charIndex++);
-  document.getElementById("descriptive-text").textContent = displayedText;
+  document.getElementById("descriptive-text").innerHTML = displayedText;
 
   if (!isDeleting && charIndex === currentText.length) {
     isDeleting = true;
@@ -58,5 +57,3 @@ function type() {
     setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
   }
 }
-
-document.addEventListener("DOMContentLoaded", type);
