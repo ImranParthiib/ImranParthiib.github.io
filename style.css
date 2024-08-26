@@ -1,12 +1,10 @@
-.bg-unique,
-header {
+.bg-unique {
   background-image: url(/images/header.webp);
   /* background-image: url("https://github.blog/wp-content/uploads/2020/12/2-2.png?resize=1024%2C613"); */
   background-size: cover;
   background-repeat: no-repeat;
 }
-.bg-custom,
-footer {
+.bg-custom {
   background-image: url(/images/footer.webp);
   /* background-image: url("https://github.blog/wp-content/uploads/2020/12/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.png?fit=1200%2C630"); */
   background-size: cover;
@@ -162,14 +160,13 @@ footer {
     transparent 99%,
     transparent
   );
- --main-bg: conic-gradient(
+  --main-bg: conic-gradient(
     from var(--border-angle),
     #0d3b3ba1,
     #042a3575 5%,
     #0a23459c 60%,
     #100a4a93 95%
   );
-
 
   background: var(--main-bg) padding-box, var(--gradient-border) border-box,
     var(--main-bg) border-box;

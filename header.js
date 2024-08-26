@@ -3,6 +3,9 @@ document
   .addEventListener("click", function () {
     const menu = document.getElementById("mobile-menu-2");
     menu.classList.toggle("hidden");
+    menu.classList.toggle("border-t-2");
+    menu.classList.toggle("mt-2");
+    menu.classList.toggle("border-red-500");
   });
 
 // Optionally close the menu when clicking outside

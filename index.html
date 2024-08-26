@@ -52,42 +52,44 @@
   </div>
 
   <!-- ?Body Started Here -->
-  <body class="bg-gray-100">
+  <body>
     <!-- Development Notice -->
     <div class="development-notice">
       This site is currently under development.
     </div>
-    <!-- ?Header Started Here -->
-    <header class="sticky top-0 z-50">
-      <nav
-        class="bg-transparent backdrop-filter backdrop-blur-lg bg-opacity-5 shadow-sm border-gray-200 px-4 lg:px-6 md:py-1 lg:py-1 dark:bg-gray-800"
-      >
+    <!-- !Header Started Here -->
+    <header
+      class="bg-gray-800 bg-opacity-90 backdrop-filter backdrop-blur-lg shadow-sm sticky top-0 z-50 border-gray-700"
+    >
+      <nav class="px-2 lg:px-6" role="navigation" aria-label="Main Navigation">
         <div
           class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
         >
+          <!-- Logo Section -->
           <a href="#" class="flex items-center">
-            <img
-              src="/icons/programming.png"
-              class="mr-3 h-4 md:h-6 lg:h-6"
-              alt="Logo"
-            />
+            <img src="/icons/programming.png" class="mr-3 h-6" alt="Logo" />
             <span
-              class="self-center md:text-xl lg:text-xl font-semibold whitespace-nowrap text-white"
+              class="self-center text-base md:text-xl font-semibold whitespace-nowrap text-white"
               >Imran Parthib</span
             >
           </a>
+
+          <!-- Resume Button -->
           <div class="flex items-center lg:order-2">
             <div
-              class="animate-effect text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 md:px-4 lg:px-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 md:py-1 lg:py-1"
+              class="animate-effect text-white font-medium rounded-lg text-sm md:text-sm px-2 md:px-4 lg:px-4 md:py-1 lg:py-1"
             >
-              <a href="./Resume/resume.pdf" target="_blank" class="">
-                Resume <i class="fas fa-download text-xl text-red-500"></i>
+              <a href="./Resume/resume.pdf" target="_blank" class="text-white">
+                Resume
+                <i
+                  class="fas fa-download py-2 md:py-1 text-sm md:text-xl text-red-500"
+                ></i>
               </a>
             </div>
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
-              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden"
               aria-controls="mobile-menu-2"
               aria-expanded="false"
             >
@@ -118,70 +120,85 @@
               </svg>
             </button>
           </div>
+
+          <!-- Main Navigation Links -->
           <div
-            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            class="hidden justify-start items-center w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
           >
             <ul
-              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+              class="flex flex-row lg:flex-row flex-wrap justify-start md:space-x-4 lg:space-x-6 text-sm md:text-sm lg:text-base"
             >
-              <li>
+              <li class="hover:underline">
                 <a
                   href="#home"
-                  class="block py-2 pr-4 pl-3 text-white font-bold rounded bg-blue-700 lg:bg-transparent lg:text-purple-500 lg:p-0 dark:text-white"
+                  class="block py-2 pr-4 pl-3 font-bold rounded lg:bg-transparent text-purple-500 hover:text-white lg:p-0 hover:underline"
                   aria-current="page"
-                  ><i
-                    class="fa-solid fa-house fa-bounce"
+                >
+                  <i
+                    class="fa-solid fa-house fa-bounce ml-2"
                     style="color: #0b6dd5"
                   ></i>
-                  Home</a
-                >
+                  Home
+                </a>
               </li>
-              <li>
+              <li class="hover:underline">
                 <a
                   href="#projects"
                   class="block py-2 pr-4 pl-3 text-gray-50 hover:text-purple-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white"
-                  ><i class="fa-solid fa-code" style="color: #14b32e"></i>
-                  Projects</a
                 >
+                  <i class="fa-solid fa-code ml-2" style="color: #14b32e"></i>
+                  Projects
+                </a>
               </li>
-              <li>
+              <li class="hover:underline">
                 <a
                   href="#skills"
                   class="block py-2 pr-4 pl-3 text-gray-50 hover:text-purple-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white"
-                  ><i class="fa-solid fa-gears" style="color: #b197fc"></i>
-                  Skills</a
                 >
+                  <i class="fa-solid fa-gears ml-2" style="color: #b197fc"></i>
+                  Skills
+                </a>
               </li>
-              <li>
+              <li class="hover:underline">
                 <a
                   href="#blogs"
                   class="block py-2 pr-4 pl-3 text-gray-50 hover:text-purple-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white"
-                  ><i class="fa-solid fa-blog" style="color: #63e6be"></i>
-                  Blog</a
                 >
+                  <i class="fa-solid fa-blog ml-2" style="color: #63e6be"></i>
+                  Blog
+                </a>
               </li>
-              <li>
+              <li class="hover:underline">
                 <a
                   href="#youtube"
                   class="block py-2 pr-4 pl-3 text-gray-50 hover:text-purple-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white"
-                  ><i class="fa-brands fa-youtube" style="color: #e90c0c"></i>
-                  Youtube</a
                 >
+                  <i
+                    class="fa-brands fa-youtube ml-2"
+                    style="color: #e90c0c"
+                  ></i>
+                  Youtube
+                </a>
               </li>
-              <li>
+              <li class="hover:underline">
                 <a
                   href="#contact"
                   class="block py-2 pr-4 pl-3 text-gray-50 hover:text-purple-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white"
-                  ><i class="fa-solid fa-envelope" style="color: #1e8fe6"></i>
-                  Contact</a
                 >
+                  <i
+                    class="fa-solid fa-envelope ml-2"
+                    style="color: #1e8fe6"
+                  ></i>
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
     <!-- ?Hero/Banner Section -->
     <section
       id="home"
