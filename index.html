@@ -31,12 +31,13 @@
 
     <!-- !CSS LINK -->
     <link rel="stylesheet" href="style.css" />
-
     <!-- AOS CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <!-- !EmailJs -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -430,12 +431,14 @@
 
       <!-- ?Projects Section -->
       <section
+        data-aos="fade-right"
         id="projects"
         class="mb-16 bg-gray-900 text-gray-50 p-8 rounded-lg shadow-xl"
       >
         <h2 class="text-4xl font-bold mb-8 text-center">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
+            data-aos="fade-down-left"
             class="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105"
           >
             <img
@@ -467,6 +470,7 @@
           </div>
 
           <div
+            data-aos="fade-up"
             class="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105"
           >
             <img
@@ -496,6 +500,7 @@
           </div>
 
           <div
+            data-aos="fade-down-right"
             class="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105"
           >
             <img
@@ -528,17 +533,20 @@
         </div>
       </section>
 
-      <!-- Skills Section -->
+      <!--? Skills Section -->
       <section
         id="skills"
         class="mb-16 bg-gray-900 text-gray-50 p-8 rounded-lg shadow-xl"
       >
-        <h2 class="text-4xl font-bold mb-8 text-center">Skills</h2>
+        <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">
+          Skills
+        </h2>
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         >
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 text-center transform transition duration-500 hover:scale-105"
+            data-aos="flip-left"
           >
             <i class="fas fa-code text-5xl mb-4 text-blue-400"></i>
             <h5 class="text-lg md:text-2xl font-bold mb-2">
@@ -550,6 +558,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 text-center transform transition duration-500 hover:scale-105"
+            data-aos="flip-left"
           >
             <i class="fas fa-database text-5xl mb-4 text-green-400"></i>
             <h5 class="text-lg md:text-2xl font-bold mb-2">
@@ -559,6 +568,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 text-center transform transition duration-500 hover:scale-105"
+            data-aos="flip-left"
           >
             <i class="fas fa-laptop-code text-5xl mb-4 text-purple-400"></i>
             <h5 class="text-lg md:text-2xl font-bold mb-2">Problem Solving</h5>
@@ -566,6 +576,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 text-center transform transition duration-500 hover:scale-105"
+            data-aos="flip-left"
           >
             <i class="fas fa-paint-brush text-5xl mb-4 text-pink-400"></i>
             <h5 class="text-lg md:text-2xl font-bold mb-2">Design</h5>
@@ -573,6 +584,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 text-center transform transition duration-500 hover:scale-105"
+            data-aos="flip-left"
           >
             <i class="fas fa-tools text-5xl mb-4 text-yellow-400"></i>
             <h5 class="text-lg md:text-2xl font-bold mb-2">
@@ -582,6 +594,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 text-center transform transition duration-500 hover:scale-105"
+            data-aos="flip-left"
           >
             <i class="fas fa-brain text-5xl mb-4 text-red-400"></i>
             <h5 class="text-lg md:text-2xl font-bold mb-2">Self Learning</h5>
@@ -589,6 +602,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 text-center transform transition duration-500 hover:scale-105"
+            data-aos="flip-left"
           >
             <i class="fas fa-pencil-alt text-5xl mb-4 text-indigo-400"></i>
             <h5 class="text-lg md:text-2xl font-bold mb-2">
@@ -598,6 +612,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 text-center transform transition duration-500 hover:scale-105"
+            data-aos="flip-left"
           >
             <i class="fa-brands fa-youtube text-5xl mb-4 text-red-500"></i>
             <h5 class="text-lg md:text-2xl font-bold mb-2">Content Creation</h5>
@@ -610,6 +625,7 @@
       <section
         id="education"
         class="mb-16 bg-gray-900 text-gray-50 p-8 rounded-lg shadow-xl"
+        data-aos="zoom-in"
       >
         <h2 class="text-4xl font-bold mb-8 text-center">
           <i class="fa-solid fa-graduation-cap mr-2 text-blue-400"></i>
@@ -619,6 +635,7 @@
           <!-- Bachelor of Science -->
           <div
             class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in"
           >
             <img
               src="./images/education/diu.jpg"
@@ -638,6 +655,7 @@
           <!-- Higher Secondary School -->
           <div
             class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in"
           >
             <img
               src="./images/education/bafshaheen.jpg"
@@ -657,6 +675,7 @@
           <!-- Secondary School -->
           <div
             class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in"
           >
             <img
               src="./images/education/school.jpg"
@@ -676,6 +695,7 @@
           <!-- Junior School -->
           <div
             class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in"
           >
             <img
               src="./images/education/school.jpg"
@@ -698,6 +718,7 @@
       <section
         id="courses"
         class="mb-16 bg-gray-900 text-gray-50 p-8 rounded-lg shadow-xl"
+        data-aos="zoom-in-left"
       >
         <h2 class="text-4xl font-bold mb-8 text-center">
           <i class="fa-solid fa-book-open mr-2 text-green-400"></i>
@@ -706,6 +727,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in-left"
           >
             <i class="fa-solid fa-code text-3xl mb-4 text-blue-400"></i>
             <h4 class="text-xl font-bold mb-2">
@@ -716,6 +738,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in-left"
           >
             <i class="fa-brands fa-js text-3xl mb-4 text-yellow-400"></i>
             <h4 class="text-xl font-bold mb-2">JavaScript Fundamentals</h4>
@@ -726,6 +749,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in-left"
           >
             <i class="fa-brands fa-html5 text-3xl mb-4 text-red-400"></i>
             <h4 class="text-xl font-bold mb-2">HTML and CSS Basics</h4>
@@ -734,6 +758,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in-left"
           >
             <i class="fa-brands fa-react text-3xl mb-4 text-blue-400"></i>
             <h4 class="text-xl font-bold mb-2">React.js Crash Course</h4>
@@ -742,6 +767,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in-left"
           >
             <i class="fa-brands fa-node-js text-3xl mb-4 text-green-400"></i>
             <h4 class="text-xl font-bold mb-2">Node.js Essentials</h4>
@@ -750,6 +776,7 @@
           </div>
           <div
             class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in-left"
           >
             <i class="fa-solid fa-database text-3xl mb-4 text-purple-400"></i>
             <h4 class="text-xl font-bold mb-2">Database Design</h4>
@@ -762,6 +789,7 @@
       <section
         id="blogs"
         class="mb-16 bg-gray-900 text-gray-50 p-8 rounded-lg shadow-xl"
+        data-aos="fade-up"
       >
         <h2 class="text-4xl font-bold mb-8 text-center">
           <i class="fa-solid fa-blog mr-2 text-purple-400"></i>
@@ -770,6 +798,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
             class="blog-post-card bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="fade-up"
           >
             <div class="p-6">
               <h3
@@ -799,6 +828,7 @@
           </div>
           <div
             class="blog-post-card bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="fade-up"
           >
             <div class="p-6">
               <h3
@@ -829,6 +859,7 @@
           </div>
           <div
             class="blog-post-card bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="fade-up"
           >
             <div class="p-6">
               <h3
@@ -858,6 +889,7 @@
           </div>
           <div
             class="blog-post-card bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="fade-up"
           >
             <div class="p-6">
               <h3
@@ -889,9 +921,11 @@
       </section>
 
       <!-- ?Latest Youtube Videos Section -->
+      <!-- ?Latest Youtube Videos Section -->
       <section
         id="youtube"
         class="mb-16 bg-gray-900 text-gray-50 p-8 rounded-lg shadow-xl"
+        data-aos="zoom-in"
       >
         <h2 class="text-4xl font-bold mb-8 text-center">
           <i class="fab fa-youtube mr-2 text-red-500"></i>
@@ -900,6 +934,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
             class="youtube-card bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in"
           >
             <div class="relative" style="padding-bottom: 56.25%">
               <iframe
@@ -927,6 +962,7 @@
           </div>
           <div
             class="youtube-card bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in"
           >
             <div class="relative" style="padding-bottom: 56.25%">
               <iframe
@@ -954,6 +990,7 @@
           </div>
           <div
             class="youtube-card bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            data-aos="zoom-in"
           >
             <div class="relative" style="padding-bottom: 56.25%">
               <iframe
@@ -1102,16 +1139,15 @@
       });
     </script>
 
-    <!-- AOS initialization -->
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
+    <!-- Initialize AOS after the document is fully loaded -->
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 1200, // Duration of the animation in milliseconds
+        });
       });
     </script>
 
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Script Link-->
