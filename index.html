@@ -22,7 +22,10 @@
       property="og:description"
       content="Explore the portfolio of Imran Parthib, showcasing web development and programming projects."
     />
-    <meta property="og:image" content="https://shorturl.at/DitKH" />
+    <meta
+      property="og:image"
+      content="https://imranparthib.me/icons/programming.png"
+    />
     <meta property="og:url" content="https://imranparthib.me" />
 
     <!-- Twitter Card Meta Tag -->
@@ -50,7 +53,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
     />
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS -->
 
     <!-- AOS CSS -->
     <link
@@ -72,8 +75,38 @@
         "jobTitle": "Web Developer & Programmer"
       }
     </script>
+
+    <!-- !PWA Integration -->
+    <link rel="manifest" href="/assets/manifest-BzbfZVS-.json" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Imran Parthib | Web Developer & Programmer"
+    />
+    <link rel="apple-touch-icon" href="/assets/programming-BYuzbK61.png" />
+    <link rel="apple-touch-icon" href="/assets/programming-BYuzbK61.png" sizes="180x180" />
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js").then(
+            (registration) => {
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope
+              );
+            },
+            (error) => {
+              console.log("ServiceWorker registration failed: ", error);
+            }
+          );
+        });
+      }
+    </script>
     <script type="module" crossorigin src="/assets/index-Dyg7pRm6.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DjgxwU6M.css" />
+    <link rel="stylesheet" crossorigin href="/assets/index-DjgxwU6M.css">
   </head>
 
   <!-- ?Preloader -->
@@ -93,11 +126,7 @@
         >
           <!-- Logo Section -->
           <a href="#" class="flex items-center">
-            <img
-              src="/assets/programming-BYuzbK61.png"
-              class="mr-3 h-6"
-              alt="Logo"
-            />
+            <img src="/assets/programming-BYuzbK61.png" class="mr-3 h-6" alt="Logo" />
             <span
               class="self-center text-base md:text-xl font-semibold whitespace-nowrap text-white"
               >Imran Parthib</span
@@ -1366,6 +1395,6 @@
 
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Script Links -->
+    <!-- Script Links -->
   </body>
 </html>
