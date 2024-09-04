@@ -9,12 +9,8 @@ I am a passionate web developer with experience in HTML, CSS, and JavaScript. I 
 ## Projects
 
 Here are some of my notable projects:
-
----
-
-Update Coming soon!
-
----
+All of my projects are shown in my portfolio.
+[Projects](https://imranparthib.me/#projects)
 
 ## Skills
 
