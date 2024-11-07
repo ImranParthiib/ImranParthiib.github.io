@@ -24,9 +24,9 @@ function typeWelcomeText(text) {
 }
 
 const texts = [
-  "I'm a Frontend Developer & Programming Enthusiast 🚀",
-  "Pursuing Computer Science & Engineering",
-  "I'm a Tech Writer & Content Creator 👨‍💻",
+  "I'm a Frontend Developer & Programming Enthusiast.",
+  "Pursuing Computer Science & Engineering.",
+  "I'm a Tech Writer & Content Creator.",
 ];
 const typingSpeed = 50;
 const deletingSpeed = 30;
