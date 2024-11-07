@@ -105,7 +105,7 @@
         });
       }
     </script>
-    <script type="module" crossorigin src="/assets/index-Dyg7pRm6.js"></script>
+    <script type="module" crossorigin src="/assets/index-Dk3aHPPJ.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DjgxwU6M.css">
   </head>
 
@@ -136,7 +136,7 @@
           <!-- Resume Button -->
           <div class="flex items-center lg:order-2">
             <div
-              class="animate-effect text-white font-medium rounded-lg text-sm md:text-sm px-2 md:px-4 lg:px-4 md:py-1 lg:py-1"
+              class="animate-effect text-white font-medium rounded-lg text-sm md:text-sm px-2 md:px-4 lg:px-4 md:py-0 lg:py-0 md:my-1 lg:my-1"
             >
               <a href="./Resume/resume.pdf" target="_blank" class="text-white">
                 Resume
@@ -645,19 +645,28 @@
         id="projects"
         class="mb-16 bg-gray-900 text-gray-50 p-8 rounded-lg shadow-xl"
       >
-        <h2 class="text-4xl font-bold mb-8 text-center">Projects</h2>
+        <h2 class="text-4xl font-bold mb-4 text-center">Projects</h2>
+        <hr
+          class="w-1/2 mx-auto mb-10 border-blue-500"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        />
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Project 1 -->
           <div
             data-aos="zoom-in-down"
             class="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col"
           >
+            <!-- Image -->
             <img
               src="/assets/pilab-2hFb64oR.png"
               class="w-full h-48 object-cover"
               alt="PiLab"
             />
+
+            <!-- Content -->
             <div class="flex flex-col flex-grow p-6">
+              <!-- Title and Description -->
               <div class="flex-grow">
                 <h5 class="text-2xl font-bold mb-2 text-blue-300">
                   PiLab - A Pi Exploration Platform
@@ -668,6 +677,32 @@
                   Built with React, Tailwind.
                 </p>
               </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  React.js
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  Tailwind
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  HTML5
+                </span>
+              </div>
+
+              <!-- Buttons -->
               <div class="flex space-x-2 mt-auto">
                 <a
                   href="https://github.com/ImranParthiib/PiLab"
@@ -686,28 +721,59 @@
               </div>
             </div>
           </div>
+
           <!-- Project 2 -->
           <div
             data-aos="zoom-in-down"
             class="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col"
           >
+            <!-- Project Image -->
             <img
               src="/assets/examtimeflight-SFZSgycQ.png"
               class="w-full h-48 object-cover"
               alt="Exam Timer"
             />
+
+            <!-- Project Content -->
             <div class="flex flex-col flex-grow p-6">
+              <!-- Title and Description -->
               <div class="flex-grow">
                 <h5 class="text-2xl font-bold mb-2 text-blue-300">
                   Exam Timer - A Responsive Countdown Timer for Exams
                 </h5>
                 <p class="mb-4 text-gray-300">
-                  Exam Timer - A Responsive Countdown Timer for Exams This
-                  project is a responsive exam timer built with React, featuring
-                  a countdown timer with customizable hours and minutes.
+                  This project is a responsive exam timer built with React,
+                  featuring a countdown timer with customizable hours and
+                  minutes.
                 </p>
               </div>
+              <!-- Tech Stack Tags -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  React.js
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  Tailwind
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  HTML5
+                </span>
+              </div>
+
+              <!-- Buttons -->
               <div class="flex space-x-2 mt-auto">
+                <!-- GitHub Button -->
                 <a
                   href="https://github.com/ImranParthiib/ExamTimeFlight"
                   target="_blank"
@@ -715,6 +781,8 @@
                 >
                   <i class="fab fa-github mr-2"></i> GitHub
                 </a>
+
+                <!-- Live Demo Button -->
                 <a
                   href="https://exam-time-flight.vercel.app/"
                   target="_blank"
@@ -725,6 +793,7 @@
               </div>
             </div>
           </div>
+
           <!-- Project 3 -->
           <div
             data-aos="zoom-in-down"
@@ -738,14 +807,37 @@
             <div class="flex flex-col flex-grow p-6">
               <div class="flex-grow">
                 <h5 class="text-2xl font-bold mb-2 text-blue-300">
-                  Exam Timer
+                  EasyTech - An EdTech Website
                 </h5>
                 <p class="mb-4 text-gray-300">
-                  Exam Timer - A Responsive Countdown Timer for Exams This
-                  project is a responsive exam timer built with React, featuring
-                  a countdown timer with customizable hours and minutes, visual
-                  progress indicator, and start, pause, and reset functionality
+                  EasyTech is an EdTech website that offers online courses for a
+                  variety of subjects. Built with Bootstrap, this project
+                  features a responsive design and a clean layout.
                 </p>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-200 bg-purple-300 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  Tailwind
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  CSS3
+                </span>
               </div>
               <div class="flex space-x-2 mt-auto">
                 <a
@@ -787,6 +879,30 @@
                   Tailwind.
                 </p>
               </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="text-xs border border-pink-500 font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  Nextjs
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  Tailwind
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  HTML5
+                </span>
+              </div>
               <div class="flex space-x-2 mt-auto">
                 <a
                   href="https://github.com/ImranParthiib/devx"
@@ -827,6 +943,29 @@
                   and offline capabilities
                 </p>
               </div>
+              <!-- Tech Stack Tags -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  Nextjs
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  Tailwind
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  HTML5
+                </span>
+              </div>
               <div class="flex space-x-2 mt-auto">
                 <a
                   href="https://github.com/ImranParthiib/To-Let-Home-Finder"
@@ -858,13 +997,36 @@
             <div class="flex flex-col flex-grow p-6">
               <div class="flex-grow">
                 <h5 class="text-2xl font-bold mb-2 text-blue-300">
-                  ToLet Home - A Home Searching Website
+                  Panda Commerce - A Frontend E-Commerce Website
                 </h5>
                 <p class="mb-4 text-gray-300">
                   This project is frontend e-commerce website built with HTML,
                   Bootstrap, CSS, and JavaScript. It features a responsive
                   design.
                 </p>
+              </div>
+              <!-- Tech Stack Tags -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  CSS3
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  Bootstrap
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="text-xs font-medium text-purple-400 bg-purple-800 bg-opacity-30 px-2 py-1 rounded"
+                >
+                  JavaScript
+                </span>
               </div>
               <div class="flex space-x-2 mt-auto">
                 <a
@@ -1371,7 +1533,7 @@
         </div>
         <div class="text-center mt-8">
           <a
-            href="https://www.youtube.com/channel/YOUR_CHANNEL_ID"
+            href="https://www.youtube.com/@decode_us"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-block bg-red-600 text-white py-2 px-6 rounded-full hover:bg-red-700 transition-colors duration-300"
