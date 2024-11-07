@@ -1049,95 +1049,771 @@
           </div>
         </div>
       </section>
-
-      <!-- !!Educational Background Section -->
+      <!-- Education Section -->
       <section
         id="education"
-        class="mb-16 bg-gray-900 text-gray-50 p-8 rounded-lg shadow-xl"
-        data-aos="zoom-in"
+        class="py-12 container mx-auto my-16 bg-gradient-to-br from-gray-900 to-gray-800 text-gray-50 p-4 sm:p-8 rounded-xl shadow-2xl"
       >
-        <h2 class="text-4xl font-bold mb-8 text-center">
-          <i class="fa-solid fa-graduation-cap mr-2 text-blue-400"></i>
-          Education
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Bachelor of Science -->
-          <div
-            class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
-            data-aos="zoom-in"
-          >
-            <img
-              src="./images/education/diu.jpg"
-              alt="Daffodil International University"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h4 class="font-bold text-blue-300 text-2xl mb-2">
-                Bachelor of Science in Computer Science
-              </h4>
-              <p class="text-lg mb-2">Daffodil International University</p>
-              <p class="text-gray-400">CGPA: 3.33/4.00</p>
-              <p class="text-gray-400">2020 - 2024</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 data-aos="fade-up" class="text-4xl font-bold text-center mb-4">
+            Education
+          </h2>
+          <p data-aos="fade-up" class="text-center mb-12 max-w-2xl mx-auto">
+            My academic path has been focused on computer science and software
+            engineering, with a strong emphasis on practical applications and
+            cutting-edge technologies.
+          </p>
+
+          <!-- Desktop Timeline -->
+          <div class="hidden md:block relative">
+            <!-- Smooth Serpentine Main Path -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full">
+              <svg
+                class="absolute h-full w-40 -left-20"
+                preserveAspectRatio="none"
+                viewBox="0 0 100 100"
+              >
+                <path
+                  d="M50,0 
+                           C55,15 45,30 50,50
+                           C55,70 45,85 50,100"
+                  stroke="url(#gradient)"
+                  stroke-width="2"
+                  fill="none"
+                  class="path-animation main-path"
+                />
+
+                <circle
+                  cx="50"
+                  cy="0"
+                  r="2"
+                  class="animate-pulse"
+                  fill="#3B82F6"
+                />
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="2"
+                  class="animate-pulse"
+                  fill="#10B981"
+                />
+                <circle
+                  cx="50"
+                  cy="100"
+                  r="2"
+                  class="animate-pulse"
+                  fill="#8B5CF6"
+                />
+
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" style="stop-color: #3b82f6">
+                      <animate
+                        attributeName="stop-color"
+                        values="#3B82F6;#10B981;#8B5CF6;#3B82F6"
+                        dur="4s"
+                        repeatCount="indefinite"
+                      />
+                    </stop>
+                    <stop offset="100%" style="stop-color: #8b5cf6">
+                      <animate
+                        attributeName="stop-color"
+                        values="#8B5CF6;#3B82F6;#10B981;#8B5CF6"
+                        dur="4s"
+                        repeatCount="indefinite"
+                      />
+                    </stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <!-- Timeline Cards -->
+            <div class="relative space-y-12">
+              <!-- Master's Degree -->
+              <div class="flex items-center justify-between group">
+                <div class="w-5/12 pr-8">
+                  <div
+                    data-aos="fade-down"
+                    class="bg-gradient-to-br from-gray-900 to-gray-900 text-gray-50 p-4 sm:p-8 rounded-xl shadow-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative"
+                  >
+                    <!-- Connector -->
+                    <svg
+                      class="absolute top-1/3 -right-24 w-24 h-24"
+                      viewBox="0 0 100 100"
+                    >
+                      <circle
+                        cx="10"
+                        cy="50"
+                        r="6"
+                        class="animate-ping"
+                        fill="#3B82F6"
+                        fill-opacity="0.2"
+                      />
+                      <circle cx="10" cy="50" r="3" fill="#3B82F6" />
+                      <path
+                        d="M10,50 Q30,50 50,30 T90,50"
+                        stroke="url(#connector-gradient-1)"
+                        stroke-width="3"
+                        fill="none"
+                        class="path-animation connector"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="connector-gradient-1"
+                          x1="0%"
+                          y1="0%"
+                          x2="100%"
+                          y2="0%"
+                        >
+                          <stop offset="0%" style="stop-color: #3b82f6" />
+                          <stop offset="100%" style="stop-color: #93c5fd" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <!-- Content -->
+                    <span
+                      class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full"
+                      >2022 - Present</span
+                    >
+                    <h3 class="font-bold text-lg mt-3 mb-2">
+                      Master of Science in Software Engineering
+                    </h3>
+                    <p class="text-blue-600 font-semibold text-sm">
+                      Stanford University
+                    </p>
+                    <ul class="mt-2 text-sm space-y-1">
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-blue-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        Specialization in Cloud Computing and AI
+                      </li>
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-blue-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        Research in Distributed Systems
+                      </li>
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-blue-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        GPA: 3.9/4.0
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="w-2/12 flex justify-center">
+                  <div class="relative">
+                    <img
+                      src="./images/education/diu.jpg"
+                      alt="Master's Degree"
+                      class="w-16 h-16 rounded-full object-cover ring-4 ring-blue-400 shadow-xl z-10 transform transition-transform group-hover:scale-110 duration-300"
+                    />
+                    <div
+                      class="absolute -top-2 -right-2 bg-blue-500 text-white px-2 py-0.5 rounded-full text-xs font-medium"
+                    >
+                      Current
+                    </div>
+                  </div>
+                </div>
+                <div class="w-5/12 pl-8">
+                  <!-- Empty for alignment -->
+                </div>
+              </div>
+
+              <!-- Bachelor's Degree -->
+              <div class="flex items-center justify-between group">
+                <div class="w-5/12 pr-8">
+                  <!-- Empty for alignment -->
+                </div>
+                <div class="w-2/12 flex justify-center">
+                  <div class="relative">
+                    <img
+                      src="./images/education/bafshaheen.jpg"
+                      alt="Bachelor's Degree"
+                      class="w-16 h-16 rounded-full object-cover ring-4 ring-green-300 shadow-xl z-10 transform transition-transform group-hover:scale-110 duration-300"
+                    />
+                  </div>
+                </div>
+                <div class="w-5/12 pl-8">
+                  <div
+                    data-aos="fade-down"
+                    class="bg-gradient-to-br text-gray-50 p-4 sm:p-8 rounded-xl shadow-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative"
+                  >
+                    <!-- Connector -->
+                    <svg
+                      class="absolute top-1/3 -left-24 w-24 h-24"
+                      viewBox="0 0 100 100"
+                    >
+                      <circle
+                        cx="90"
+                        cy="50"
+                        r="6"
+                        class="animate-ping"
+                        fill="#10B981"
+                        fill-opacity="0.2"
+                      />
+                      <circle cx="90" cy="50" r="3" fill="#10B981" />
+                      <path
+                        d="M90,50 Q70,50 50,70 T10,50"
+                        stroke="url(#connector-gradient-2)"
+                        stroke-width="3"
+                        fill="none"
+                        class="path-animation connector"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="connector-gradient-2"
+                          x1="100%"
+                          y1="0%"
+                          x2="0%"
+                          y2="0%"
+                        >
+                          <stop offset="0%" style="stop-color: #10b981" />
+                          <stop offset="100%" style="stop-color: #6ee7b7" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <!-- Content -->
+                    <span
+                      class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full"
+                      >2018 - 2022</span
+                    >
+                    <h3 class="font-bold text-lg mt-3 mb-2">
+                      Bachelor of Computer Science
+                    </h3>
+                    <p class="text-green-600 font-semibold text-sm">
+                      Massachusetts Institute of Technology
+                    </p>
+                    <ul class="text-gray-200 mt-2 text-sm space-y-1">
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-green-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        Major in Software Development
+                      </li>
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-green-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        Minor in Data Science
+                      </li>
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-green-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        Dean's List All Semesters
+                      </li>
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-green-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        GPA: 3.8/4.0
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- High School -->
+              <div class="flex items-center justify-between group">
+                <div class="w-5/12 pr-8">
+                  <div
+                    data-aos="fade-down"
+                    class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-50 p-4 sm:p-8 rounded-xl shadow-2xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative"
+                  >
+                    <!-- Connector -->
+                    <svg
+                      class="absolute top-1/3 -right-24 w-24 h-24"
+                      viewBox="0 0 100 100"
+                    >
+                      <circle
+                        cx="10"
+                        cy="50"
+                        r="6"
+                        class="animate-ping"
+                        fill="#8B5CF6"
+                        fill-opacity="0.2"
+                      />
+                      <circle cx="10" cy="50" r="3" fill="#8B5CF6" />
+                      <path
+                        d="M10,50 Q30,50 50,30 T90,50"
+                        stroke="url(#connector-gradient-3)"
+                        stroke-width="3"
+                        fill="none"
+                        class="path-animation connector"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="connector-gradient-3"
+                          x1="0%"
+                          y1="0%"
+                          x2="100%"
+                          y2="0%"
+                        >
+                          <stop offset="0%" style="stop-color: #8b5cf6" />
+                          <stop offset="100%" style="stop-color: #c4b5fd" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <!-- Content -->
+                    <span
+                      class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full"
+                      >2014 - 2018</span
+                    >
+                    <h3 class="font-bold text-lg mt-3 mb-2">
+                      High School Diploma
+                    </h3>
+                    <p class="text-purple-600 font-semibold text-sm">
+                      Tech High School
+                    </p>
+                    <ul class="mt-2 text-sm space-y-1">
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-purple-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        Advanced Placement in Computer Science
+                      </li>
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-purple-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        Science & Technology Track
+                      </li>
+                      <li class="flex items-center">
+                        <svg
+                          class="w-4 h-4 mr-2 text-purple-500"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                        Valedictorian
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="w-2/12 flex justify-center">
+                  <div class="relative">
+                    <img
+                      src="./images/education/school.jpg"
+                      alt="High School"
+                      class="w-16 h-16 rounded-full object-cover ring-4 ring-purple-300 shadow-xl z-10 transform transition-transform group-hover:scale-110 duration-300"
+                    />
+                  </div>
+                </div>
+                <div class="w-5/12 pl-8">
+                  <!-- Empty for alignment -->
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Higher Secondary School -->
-          <div
-            class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
-            data-aos="zoom-in"
-          >
-            <img
-              src="./images/education/bafshaheen.jpg"
-              alt="Baf Shaheen College, Jessore"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h4 class="font-bold text-blue-300 text-2xl mb-2">
-                Higher Secondary School in Science
-              </h4>
-              <p class="text-lg mb-2">Baf Shaheen College, Jessore</p>
-              <p class="text-gray-400">GPA: 3.83/5.00</p>
-              <p class="text-gray-400">2017 - 2019</p>
-            </div>
-          </div>
+          <!-- Mobile Timeline -->
+          <div class="md:hidden space-y-4 px-4">
+            <!-- Master's Degree -->
+            <div
+              class="fade-right bg-gradient-to-br from-gray-900 to-gray-800 text-gray-50 p-4 sm:p-8 rounded-xl relative transform transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <!-- Timeline dot and connector -->
+              <div
+                class="absolute -left-1.5 top-6 w-3 h-3 bg-blue-500 rounded-full border-2 border-white z-10"
+              ></div>
+              <!-- Vertical line -->
+              <div
+                class="absolute -left-0.5 top-6 h-full w-0.5 bg-gradient-to-b from-blue-500 via-green-500 to-purple-500"
+              ></div>
 
-          <!-- Secondary School -->
-          <div
-            class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
-            data-aos="zoom-in"
-          >
-            <img
-              src="./images/education/school.jpg"
-              alt="Harinarayanpur ML High School"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h4 class="font-bold text-blue-300 text-2xl mb-2">
-                Secondary School in Science
-              </h4>
-              <p class="text-lg mb-2">Harinarayanpur ML High School</p>
-              <p class="text-gray-400">GPA: 5.00/5.00</p>
-              <p class="text-gray-400">2015 - 2017</p>
+              <!-- Content -->
+              <div class="ml-4">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full"
+                  >2022 - Present</span
+                >
+                <div class="flex items-center mt-2 space-x-3 relative">
+                  <!-- Image with connector -->
+                  <div class="relative">
+                    <img
+                      src="/images/education/diu.jpg"
+                      alt="Master's Degree"
+                      class="w-12 h-12 rounded-full object-cover ring-2 ring-blue-500 shadow-md z-10 relative"
+                    />
+                    <!-- Horizontal connector from image to content -->
+                    <div
+                      class="absolute top-1/2 -right-3 w-3 h-0.5 bg-gradient-to-r from-blue-500 to-blue-300"
+                    ></div>
+                  </div>
+                  <div class="flex-1">
+                    <h3 class="font-bold text-base">
+                      Master of Science in Software Engineering
+                    </h3>
+                    <p class="text-blue-600 font-semibold text-xs">
+                      Stanford University
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-2 pl-2 border-l-2 border-blue-100">
+                  <ul class="text-gray-600 text-xs space-y-1">
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-blue-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      Specialization in Cloud Computing and AI
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-blue-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      Research in Distributed Systems
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-blue-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      GPA: 3.9/4.0
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="absolute -top-2 right-2 bg-blue-500 text-white px-2 py-0.5 rounded-full text-xs font-medium"
+                >
+                  Current
+                </div>
+              </div>
             </div>
-          </div>
 
-          <!-- Junior School -->
-          <div
-            class="bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105"
-            data-aos="zoom-in"
-          >
-            <img
-              src="./images/education/school.jpg"
-              alt="Harinarayanpur ML High School"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h4 class="font-bold text-blue-300 text-2xl mb-2">
-                Junior School
-              </h4>
-              <p class="text-lg mb-2">Harinarayanpur ML High School</p>
-              <p class="text-gray-400">CGPA: 4.63/5.00</p>
-              <p class="text-gray-400">2010 - 2015</p>
+            <!-- Bachelor's Degree -->
+            <div
+              class="bg-white rounded-xl shadow-lg p-3 relative transform transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <!-- Timeline dot and connector -->
+              <div
+                class="absolute -left-1.5 top-6 w-3 h-3 bg-green-500 rounded-full border-2 border-white z-10"
+              ></div>
+
+              <!-- Content -->
+              <div class="ml-4">
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full"
+                  >2018 - 2022</span
+                >
+                <div class="flex items-center mt-2 space-x-3 relative">
+                  <!-- Image with connector -->
+                  <div class="relative">
+                    <img
+                      src="/images/education/bafshaheen.jpg"
+                      alt="Bachelor's Degree"
+                      class="w-12 h-12 rounded-full object-cover ring-2 ring-green-500 shadow-md z-10 relative"
+                    />
+                    <!-- Horizontal connector from image to content -->
+                    <div
+                      class="absolute top-1/2 -right-3 w-3 h-0.5 bg-gradient-to-r from-green-500 to-green-300"
+                    ></div>
+                  </div>
+                  <div class="flex-1">
+                    <h3 class="font-bold text-base text-gray-800">
+                      Bachelor of Computer Science
+                    </h3>
+                    <p class="text-green-600 font-semibold text-xs">
+                      Massachusetts Institute of Technology
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-2 pl-2 border-l-2 border-green-100">
+                  <ul class="text-gray-600 text-xs space-y-1">
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-green-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      Major in Software Development
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-green-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      Minor in Data Science
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-green-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      Dean's List All Semesters
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-green-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      GPA: 3.8/4.0
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- High School -->
+            <div
+              class="bg-white rounded-xl shadow-lg p-3 relative transform transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <!-- Timeline dot and connector -->
+              <div
+                class="absolute -left-1.5 top-6 w-3 h-3 bg-purple-500 rounded-full border-2 border-white z-10"
+              ></div>
+
+              <!-- Content -->
+              <div class="ml-4">
+                <span
+                  class="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-1 rounded-full"
+                  >2014 - 2018</span
+                >
+                <div class="flex items-center mt-2 space-x-3 relative">
+                  <!-- Image with connector -->
+                  <div class="relative">
+                    <img
+                      src="./images/education/school.jpg"
+                      alt="High School"
+                      class="w-12 h-12 rounded-full object-cover ring-2 ring-purple-500 shadow-md z-10 relative"
+                    />
+                    <!-- Horizontal connector from image to content -->
+                    <div
+                      class="absolute top-1/2 -right-3 w-3 h-0.5 bg-gradient-to-r from-purple-500 to-purple-300"
+                    ></div>
+                  </div>
+                  <div class="flex-1">
+                    <h3 class="font-bold text-base text-gray-800">
+                      High School Diploma
+                    </h3>
+                    <p class="text-purple-600 font-semibold text-xs">
+                      Tech High School
+                    </p>
+                  </div>
+                </div>
+                <div class="mt-2 pl-2 border-l-2 border-purple-100">
+                  <ul class="text-gray-600 text-xs space-y-1">
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-purple-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      Advanced Placement in Computer Science
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-purple-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      Science & Technology Track
+                    </li>
+                    <li class="flex items-center">
+                      <svg
+                        class="w-3 h-3 mr-1.5 text-purple-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      Valedictorian
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
